@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item active"><a class="header__link" href="#">Home</a></li>
+                        <li class="header__item"><a class="header__link" href="#about">About me</a></li>
+                        <li class="header__item"><a class="header__link" href="#skils">Skils</a></li>
+                        <li class="header__item"><a class="header__link" href="#portfolio">Portfolio</a></li>
+                        <li class="header__item"><a class="header__link" href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="lang">
+                    <ul class="lang__list">
+                        <li class="lang__item"><a class="lang__link" href="#">Uk</a></li>
+                        <li class="lang__item active"><a class="lang__link" href="#">Eng</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <h1 class="header__title">
+                    Bohdana <br>
+                    Lutska
+                </h1>
+                <h2 class="header__subtitle">
+                    Frontend Developer<br>
+                    Ivano-Frankivsk
+                </h2>
+                <div class="lang lang--revers">
+                    <ul class="lang__list">
+                        <li class="lang__item"><a class="lang__link" href="#">Uk</a></li>
+                        <li class="lang__item active"><a class="lang__link" href="#">Eng</a></li>
+                    </ul>
+                </div>
+
+                <button class="burger" type="button" aria-label="Open menu">
+                    <span class="burger-line"></span>
+                </button>
+            </div>
+            <img class="img" src="images/bg.jpg" alt="Picture Front-end">
+        </div>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <div class="container container--small">
+                <h2 class="about__title title">About me</h2>
+                <div class="about__content">
+                    <p>
+                        Hi, I'm Bohdana – Junior Frontend Developer.
+                    </p>
+                    <p>
+                        I'm studying at course "Front-end Web Development" in IT Cluster Academy.
+                    </p>
+                    <p>
+                        I suppose that a sociability, flexibility of thinking, a tendency to self-organization
+                        and the ability to perform routine work will help me to realize myself in this industry.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skils">
+            <div class="container container--small">
+                <h2 class="skils__title title">Skils</h2>
+                <h3 class="skils__subtitle">
+                    I work in such programs as
+                </h3>
+                <ul class="skils__list">
+                    <li class="skils__item">
+                        <img class="icon-brand" src="images/logo/html.jpg" alt="html">
+                        <h4 class="skils__item-title line-clamp">
+                            HTML
+                        </h4>
+                    </li>
+                    <li class="skils__item">
+                        <img class="icon-brand" src="images/logo/css.jpg" alt="css">
+                        <h4 class="skils__item-title line-clamp">
+                            CSS
+                        </h4>
+                    </li>
+                    <li class="skils__item">
+                        <img class="icon-brand" src="images/logo/js.jpg" alt="JS">
+                        <h4 class="skils__item-title line-clamp">
+                            JS
+                        </h4>
+                    </li>
+                    <li class="skils__item">
+                        <img class="icon-brand" src="images/logo/scss.webp" alt="scss">
+                        <h4 class="skils__item-title line-clamp">
+                            SCSS
+
+                        </h4>
+                    </li>
+                    <li class="skils__item">
+                        <img class="icon-brand" src="images/logo/bootstrap.png" alt="scss">
+                        <h4 class="skils__item-title line-clamp">
+                            Bootstrap
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container container--small">
+                <h2 class="portfolio__title title">Portfolio</h2>
+                <ul class="portfolio__list">
+                    <li class="portfolio__item">
+                        <img class="portfolio__img" src="images/works/burger-menu.png"
+                            alt="Photo my work -   Online fashion store - Homepage">
+                        <a class="portfolio__link" href="task_3" target="_blank">
+                            Burger-menu
+                        </a>
+                    </li>
+                    <li class="portfolio__item">
+                        <img class="portfolio__img" src="images/works/metal-band.png"
+                            alt="Photo my work -  Reebok Store - Concept">
+                        <a class="portfolio__link" href="task_4" target="_blank">
+                            Metal Band
+                        </a>
+                    </li>
+                    <li class="portfolio__item">
+                        <img class="portfolio__img" src="images/works/book-shop.png"
+                            alt="Photo my work - Braun Landing Page - Concept">
+                        <a class="portfolio__link" href="task_5" target="_blank">
+                            Book shop
+                        </a>
+                    </li>
+
+                    <li class="portfolio__item">
+                        <a class="portfolio__link" href="task_9" target="_blank">
+                            Company
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <h2 class="footer__title title">
+                Contacts
+            </h2>
+            <h3 class="footer__subtitle">
+                Want to know more or just chat? You are welcome!
+            </h3>
+            <button class="footer__btn" type="button">Send message</button>
+            <ul class="footer__social">
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="#">
+                        <svg class="icon">
+                            <use xlink:href="images/sprite.svg#in"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="#">
+                        <svg class="icon">
+                            <use xlink:href="images/sprite.svg#insta"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="#">
+                        <svg class="icon">
+                            <use xlink:href="images/sprite.svg#be"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="#">
+                        <svg class="icon">
+                            <use xlink:href="images/sprite.svg#ball"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <span class="footer__like">
+                Like me on <br>
+                LinkedIn, Instagram, Behance, Dribble
+            </span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
