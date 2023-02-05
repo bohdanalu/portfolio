@@ -13,30 +13,33 @@
 
 .skils__list {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 80px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .skils__item {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .skils__item-title {
   max-width: 90px;
   font-size: 16px;
+  text-transform: uppercase;
   color: var(--text);
 }
 
 .icon-brand {
-  width: 89px;
-  height: 89px;
+  width: 45px;
+  height: 45px;
+  padding: 20px;
   border-radius: 50%;
-  background-color: var(--text);
+  background-color: var(--text-secondary);
   font-size: 36px;
-  line-height: 89px;
+  line-height: 45px;
   color: var(--bg-light);
   margin-bottom: 20px;
 }
@@ -44,11 +47,10 @@
 @media screen and (min-width: 768px) {
   .skils__list {
     flex-direction: row;
-    justify-content: space-between;
-    gap: 40px;
+    gap: 20px;
   }
 
   .skils__item {
-    width: 20%;
+    width: 12%;
   }
 }

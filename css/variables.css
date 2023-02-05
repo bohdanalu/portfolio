@@ -1,7 +1,21 @@
-:root {
-  --text: #070707;
+:root[data-theme="light"] {
+  --text: #0b0a19;
   --main-bg: #ffffff;
   --section-bg: #f6f6f6;
-  --text-lighter: #828282;
-  --bg-light: #fbecec;
+  --bg-light: #f9ebf1;
+  --text-secondary: #57395f;
+}
+
+:root[data-theme="dark"] {
+  --text: #ffffff;
+  --main-bg: #0b0a19;
+  --section-bg: #1a051a;
+  --bg-light: #57395f;
+  --text-secondary: #f9ebf1;
+}
+
+:root {
+  --bg-mode: #fbb972;
+
+  --text-lighter: #999599;
 }

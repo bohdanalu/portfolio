@@ -14,6 +14,7 @@ for (const element of mode) {
 function toggleBurger() {
   menu.classList.toggle("active");
   body.classList.toggle("lock");
+
   for (const line of burgerLines) {
     line.classList.toggle("active");
   }
@@ -23,6 +24,7 @@ function clickMenu(event) {
   if (event.target.classList.contains("header__link")) {
     body.classList.remove("lock");
     menu.classList.remove("active");
+
     for (const line of burgerLines) {
       line.classList.remove("active");
     }
@@ -31,14 +33,18 @@ function clickMenu(event) {
 
 function toggleMode(event) {
   curentelement = event.target.parentElement;
+
   let nextSibling = curentelement.nextElementSibling;
   let prevSibling = curentelement.previousElementSibling;
   let siblings = [];
+
+  const rootEl = document.documentElement;
+
   curentelement.classList.add("active");
 
   curentelement.firstElementChild.classList.contains("fa-moon")
-    ? body.classList.add("mode-dark")
-    : body.classList.remove("mode-dark");
+    ? rootEl.setAttribute("data-theme", "dark")
+    : rootEl.setAttribute("data-theme", "light");
 
   while (nextSibling) {
     siblings.push(nextSibling);
