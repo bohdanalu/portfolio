@@ -1,55 +1,54 @@
 #skils {
-    padding: 83px 0 98px;
-    text-align: center;
+  padding: 80px 0;
+  text-align: center;
 }
 
 .skils__title {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .skils__subtitle {
-    margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
 .skils__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 80px;
 }
 
 .skils__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skils__item-title {
-    margin-bottom: 40px;
-    max-width: 90px;
-    font-size: 14px;
+  max-width: 90px;
+  font-size: 16px;
+  color: var(--text);
 }
 
 .icon-brand {
-    width: 89px;
-    height: 99px;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-.icon-star {
-    width: 166px;
-    height: 26px;
+  width: 89px;
+  height: 89px;
+  border-radius: 50%;
+  background-color: var(--text);
+  font-size: 36px;
+  line-height: 89px;
+  color: var(--bg-light);
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
-    .skils__list {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 40px;
-    }
+  .skils__list {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+  }
 
-    .skils__item {
-        width: 20%;
-    }
+  .skils__item {
+    width: 20%;
+  }
 }

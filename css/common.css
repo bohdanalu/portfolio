@@ -51,7 +51,7 @@ body.lock {
   padding: 10px 0;
   cursor: pointer;
   text-align: center;
-  color: var(--text-lighter);
+  color: var(--bg-light);
 }
 
 .mode__item:not(:last-child) {
