@@ -23,16 +23,22 @@
   margin-bottom: 44px;
   padding: 15px;
   border-radius: 6px;
-  border: 4px solid var(--text-secondary);
+  border: 3px solid var(--text-secondary);
   background-color: var(--main-bg);
+}
+.portfolio__work-name {
+  font-style: italic;
+  margin-right: 5px;
 }
 
 .portfolio__link {
-  text-decoration-line: underline;
+  color: var(--text-secondary);
+  font-weight: bold;
   transition: color 0.2s ease;
 }
 
 .portfolio__link:hover {
   color: var(--text-lighter);
+  transform: scale(1.5);
   transition: color 0.3s ease;
 }
