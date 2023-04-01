@@ -15,8 +15,12 @@ body {
   background-color: var(--main-bg);
 }
 
+body.lock {
+  position: fixed;
+}
+
 .container {
-  max-width: 1002px;
+  max-width: 1040px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -25,8 +29,8 @@ body {
   max-width: 995px;
 }
 
-body.lock {
-  overflow: hidden;
+.padding {
+  padding: 60px 0;
 }
 
 .title {
@@ -80,6 +84,10 @@ body.lock {
 }
 
 @media screen and (min-width: 769px) {
+  .padding {
+    padding: 85px 0 75px;
+  }
+
   div.mode.mode--revers {
     display: block;
     position: static;
