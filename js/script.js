@@ -59,3 +59,4 @@ function toggleMode(event) {
     sibling.classList.remove("active");
   }
 }
+
