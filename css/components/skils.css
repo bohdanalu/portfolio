@@ -12,7 +12,7 @@
 
 .skils__list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
 }
@@ -40,6 +40,10 @@
   font-size: 36px;
   color: var(--bg-light);
   margin-bottom: 20px;
+}
+
+.icon-brand .tailwind {
+  fill: var(--bg-light);
 }
 
 .icon-brand:before {
